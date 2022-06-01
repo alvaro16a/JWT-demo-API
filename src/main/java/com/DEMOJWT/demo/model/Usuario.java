@@ -9,7 +9,7 @@ public class Usuario {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer idPersona;
+    private Integer id;
     @Column(unique = true)
     private String userName;
     private String clave;
@@ -17,10 +17,10 @@ public class Usuario {
     public Usuario(){}
 
     public Integer getIdPersona() {
-        return idPersona;
+        return id;
     }
-    public void setIdPersona(Integer idPersona) {
-        this.idPersona = idPersona;
+    public void setIdPersona(Integer id) {
+        this.id = id;
     }
     public String getUserName() {
         return userName;
